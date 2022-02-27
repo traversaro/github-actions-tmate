@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: launch-tmate-shell
+name: launch-tmate-shell-macos-mambaforge
 
 # Controls when the workflow will run
 on:
@@ -22,8 +22,8 @@ jobs:
       - name: Install mambaforge
         shell: bash
         run: |
-          curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
-          bash Miniforge3.sh -b
+          curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-$(uname -m).sh"
+          bash Mambaforge.sh -b
       
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
