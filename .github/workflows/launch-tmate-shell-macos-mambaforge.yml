@@ -22,8 +22,9 @@ jobs:
       - name: Install mambaforge
         shell: bash
         run: |
-          curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-$(uname -m).sh"
-          bash Mambaforge.sh -b
+          #curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-$(uname -m).sh"
+          #bash Mambaforge.sh -b
+          echo "Hello"
       
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
